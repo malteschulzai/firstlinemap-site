@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Firstline Map: 3D-Tourenkarte für Skitouren in den Alpen</title>
+<meta name="description" content="Firstline Map ist eine kostenlose 3D-Karte für Skitouren und Bergtouren in den Alpen: Gelände, Hangneigung, Lawinenlage und Tourenplaner im Browser.">
+<meta name="theme-color" content="#00132d">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta property="og:title" content="Firstline Map">
+<meta property="og:description" content="3D-Tourenkarte für Skitouren in den Alpen.">
+<meta property="og:image" content="https://firstlinemap.com/icon-512.png">
+<link rel="stylesheet" href="style.css">
+<script>
+/* firstlinemap.com hatte kurz die Karten-App. Alten Offline-Speicher dieser Adresse aufräumen. */
+if("serviceWorker" in navigator){navigator.serviceWorker.getRegistrations().then(function(rs){rs.forEach(function(r){r.unregister()})}).catch(function(){})}
+if(window.caches){caches.keys().then(function(ks){ks.forEach(function(k){caches.delete(k)})}).catch(function(){})}
+</script>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="/"><img src="icon-192.png" alt="">Firstline Map</a>
+    <a class="btn small" href="https://map.firstlinemap.com/">Karte öffnen</a>
+  </header>
+
+  <section class="hero">
+    <img src="splash-logo.webp" alt="Firstline Map Logo" width="900" height="753">
+    <p class="lead">Die 3D-Karte für Skitouren in den Alpen. Gelände, Hangneigung und Lawinenlage auf einen Blick, direkt im Browser.</p>
+    <a class="btn" href="https://map.firstlinemap.com/">Karte öffnen</a>
+  </section>
+
+  <section class="feat">
+    <div><h3>Gelände in 3D</h3><p>Rinnen, Grate und Hänge so sehen, wie sie sind. Mit Satellitenbild und Winteransicht.</p></div>
+    <div><h3>Hangneigung</h3><p>Steilheit farbig über dem Gelände, damit du kritische Stellen früh erkennst.</p></div>
+    <div><h3>Lawinenlage</h3><p>Aktuelle Lawinenberichte der Warndienste im Alpenraum und Daten von Messstationen.</p></div>
+    <div><h3>Tourenplaner</h3><p>Aufstieg und Abfahrt planen, mit Höhenprofil und Spitzkehren im Gelände.</p></div>
+    <div><h3>Offline</h3><p>Gebiete vorab speichern und am Berg ohne Netz nutzen.</p></div>
+    <div><h3>Kostenlos</h3><p>Ohne Konto, ohne Werbung, ohne Tracking. Läuft am Handy und am Computer.</p></div>
+  </section>
+
+  <p class="note">Firstline Map hilft bei der Planung, ersetzt aber nicht deine eigene Beurteilung vor Ort. Lies vor jeder Tour den aktuellen Lawinenlagebericht und entscheide im Gelände selbst.</p>
+
+  <footer>
+    <nav>
+      <a href="https://map.firstlinemap.com/">Karte</a>
+      <a href="/impressum/">Impressum</a>
+      <a href="/datenschutz/">Datenschutz</a>
+      <a href="mailto:kontakt@firstlinemap.com">kontakt@firstlinemap.com</a>
+    </nav>
+  </footer>
+</div>
+</body>
+</html>
