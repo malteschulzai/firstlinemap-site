@@ -10,7 +10,8 @@
 <link rel="apple-touch-icon" href="icon-192.png">
 <meta property="og:title" content="Firstline Map">
 <meta property="og:description" content="3D-Tourenkarte für Skitouren in den Alpen.">
-<meta property="og:image" content="https://firstlinemap.com/icon-512.png">
+<meta property="og:image" content="https://firstlinemap.com/img/grat-1080.webp">
+<link rel="preload" as="image" href="img/grat-1080.webp" imagesrcset="img/grat-1080.webp 1080w, img/grat-1920.webp 1920w" imagesizes="100vw">
 <link rel="stylesheet" href="style.css">
 <script>
 /* firstlinemap.com hatte kurz die Karten-App. Alten Offline-Speicher dieser Adresse aufräumen. */
@@ -19,28 +20,78 @@ if(window.caches){caches.keys().then(function(ks){ks.forEach(function(k){caches.
 </script>
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <a class="brand" href="/"><img src="icon-192.png" alt="">Firstline Map</a>
-    <a class="btn small" href="https://map.firstlinemap.com/">Karte öffnen</a>
-  </header>
+<section class="hero">
+  <img class="hero-bg" src="img/grat-1080.webp" srcset="img/grat-1080.webp 1080w, img/grat-1920.webp 1920w" sizes="100vw" alt="Snowboarder steigt mit dem Board am Rucksack über einen verschneiten Grat">
+  <div class="wrap hero-in">
+    <header class="top">
+      <a class="brand" href="/"><img src="icon-192.png" alt="">Firstline Map</a>
+      <a class="btn small" href="https://map.firstlinemap.com/">Karte öffnen</a>
+    </header>
+    <div class="hero-text">
+      <h1>Finde deine Linie.</h1>
+      <p class="lead">Die 3D-Karte für Skitouren in den Alpen. Gelände, Hangneigung und Lawinenlage auf einen Blick, direkt im Browser.</p>
+      <a class="btn" href="https://map.firstlinemap.com/">Karte öffnen</a>
+    </div>
+  </div>
+</section>
 
-  <section class="hero">
-    <img src="splash-logo.webp" alt="Firstline Map Logo" width="900" height="753">
-    <p class="lead">Die 3D-Karte für Skitouren in den Alpen. Gelände, Hangneigung und Lawinenlage auf einen Blick, direkt im Browser.</p>
-    <a class="btn" href="https://map.firstlinemap.com/">Karte öffnen</a>
+<div class="wrap">
+  <section class="story">
+    <img src="img/linien-900.webp" alt="Steile Bergflanke mit Abfahrtsspuren zwischen Felsen" width="900" height="675" loading="lazy">
+    <div>
+      <h2>Gelände lesen</h2>
+      <p>Rinnen, Grate und Hänge in 3D, mit Luftbild und Winteransicht. So siehst du schon zu Hause, wo eine Linie durchgeht.</p>
+    </div>
   </section>
 
+  <section class="story rev">
+    <img src="img/steil-900.webp" alt="Snowboarder steigt mit dem Board am Rucksack eine steile Schneeflanke hinauf" width="900" height="675" loading="lazy">
+    <div>
+      <h2>Steilheit erkennen</h2>
+      <p>Wie steil ist der Hang wirklich? Die Karte färbt Hänge ab 30 Grad in Stufen bis über 45 Grad ein. So weißt du, wo es steil wird, bevor du dort stehst.</p>
+    </div>
+  </section>
+
+  <section class="story">
+    <img src="img/lawine-900.webp" alt="Bergwand mit sichtbarem Schneebrettanriss" width="900" height="675" loading="lazy">
+    <div>
+      <h2>Lawinenlage im Blick</h2>
+      <p>Aktuelle Lawinenberichte der Warndienste im Alpenraum direkt auf der Karte, dazu Daten von Messstationen und Wetter für den Punkt, den du antippst.</p>
+    </div>
+  </section>
+
+  <section class="story rev">
+    <img src="img/spitzkehren-900.webp" alt="Rinne mit Spitzkehren-Aufstiegsspur und Abfahrtsspuren" width="900" height="675" loading="lazy">
+    <div>
+      <h2>Aufstieg planen</h2>
+      <p>Der Tourenplaner legt Aufstieg und Abfahrt ins Gelände, mit Höhenprofil und Spitzkehren, so wie du selbst gehen würdest.</p>
+    </div>
+  </section>
+</div>
+
+<section class="band">
+  <picture>
+    <source media="(max-width:700px)" srcset="img/morgenrot-hoch-800.webp">
+    <img src="img/morgenrot-1080.webp" srcset="img/morgenrot-1080.webp 1080w, img/morgenrot-1920.webp 1920w" sizes="100vw" alt="Skitourengeher im Morgenrot unter einer Felswand" loading="lazy">
+  </picture>
+  <div class="wrap band-in">
+    <h2>Früh los, auch ohne Netz.</h2>
+    <p>Speichere dein Gebiet vorab. Karte, Gelände und Hangneigung funktionieren dann auch dort, wo kein Empfang mehr ist.</p>
+  </div>
+</section>
+
+<div class="wrap">
   <section class="feat">
-    <div><h3>Gelände in 3D</h3><p>Rinnen, Grate und Hänge so sehen, wie sie sind. Mit Satellitenbild und Winteransicht.</p></div>
-    <div><h3>Hangneigung</h3><p>Steilheit farbig über dem Gelände, damit du kritische Stellen früh erkennst.</p></div>
-    <div><h3>Lawinenlage</h3><p>Aktuelle Lawinenberichte der Warndienste im Alpenraum und Daten von Messstationen.</p></div>
-    <div><h3>Tourenplaner</h3><p>Aufstieg und Abfahrt planen, mit Höhenprofil und Spitzkehren im Gelände.</p></div>
-    <div><h3>Offline</h3><p>Gebiete vorab speichern und am Berg ohne Netz nutzen.</p></div>
-    <div><h3>Kostenlos</h3><p>Ohne Konto, ohne Werbung, ohne Tracking. Läuft am Handy und am Computer.</p></div>
+    <div><h3>Kostenlos</h3><p>Ohne Konto, ohne Werbung, ohne Tracking.</p></div>
+    <div><h3>Offline</h3><p>Gebiete speichern und ohne Empfang nutzen.</p></div>
+    <div><h3>Überall</h3><p>Läuft am Handy und am Computer, auch als App installierbar.</p></div>
   </section>
 
   <p class="note">Firstline Map hilft bei der Planung, ersetzt aber nicht deine eigene Beurteilung vor Ort. Lies vor jeder Tour den aktuellen Lawinenlagebericht und entscheide im Gelände selbst.</p>
+
+  <section class="cta">
+    <a class="btn" href="https://map.firstlinemap.com/">Karte öffnen</a>
+  </section>
 
   <footer>
     <nav>
